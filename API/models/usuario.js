@@ -1,6 +1,6 @@
 const Mongoose= require ("mongoose");
 
-const RegisterSchema = Mongoose.Schema({
+const UserRegisterSchema = Mongoose.Schema({
     dui: String,
     nombre: String,
     correo: String,
@@ -10,15 +10,23 @@ const RegisterSchema = Mongoose.Schema({
     contraseña: String
 });
 
-module.exports = Mongoose.model("usuario", RegisterSchema);
+module.exports = Mongoose.model("usuario", UserRegisterSchema);
 
-const RegisterSchema = Mongoose.Schema({
+const AdminSchema = Mongoose.Schema({
     nombre: String,
     correo: String,
     contraseña: String
 });
 
-module.exports = Mongoose.model("empleado", RegisterSchema);
+module.exports = Mongoose.model("administrador", AdminSchema);
+
+const EmployeeSchema = Mongoose.Schema({
+    nombre: String,
+    correo: String,
+    contraseña: String
+});
+
+module.exports = Mongoose.model("empleado", EmployeeSchema);
 
 /*
 function AbstractEntitySchema() {   
