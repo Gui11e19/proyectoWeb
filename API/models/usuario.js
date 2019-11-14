@@ -7,10 +7,18 @@ const RegisterSchema = Mongoose.Schema({
     direccion: String,
     fecha_nac: Date,
     card: String,
+    contraseña: String
 });
 
 module.exports = Mongoose.model("usuario", RegisterSchema);
 
+const RegisterSchema = Mongoose.Schema({
+    nombre: String,
+    correo: String,
+    contraseña: String
+});
+
+module.exports = Mongoose.model("empleado", RegisterSchema);
 
 /*
 function AbstractEntitySchema() {   
