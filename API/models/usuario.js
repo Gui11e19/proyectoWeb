@@ -1,6 +1,6 @@
 const Mongoose= require ("mongoose");
 
-const RegisterSchema = Mongoose.Schema({
+const Schema = Mongoose.Schema({
     dui: String,
     nombre: String,
     correo: String,
