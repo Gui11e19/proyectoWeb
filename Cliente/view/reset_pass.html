@@ -1,44 +1,44 @@
 <!DOCTYPE html>
-    <html>
+<html>
         <head>
+            <title>Recuperar contraseña</title>
             <meta charset="UTF-8">
             <meta name="viewport" content="width=device-width, initial-scale=1.0">
             <meta http-equiv="X-UA-Compatible" content="ie=edge">
             <link rel="stylesheet" href="../styles/bootstrap.css">
+            <link rel="stylesheet" href="../styles/reset_pass.css">
+            <!-- Los iconos tipo Solid de Fontawesome-->
+            <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/solid.css">
+            <script src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
         </head>
-
         <body>
-            <div class="container">
-                    <div>
-                        <img src="http://www.graciaviva.cat/png/big/11/112513_hitmarker-no-background.jpg" class="rounded mx-auto d-block">
-                    </div>
-            
-                <div class="form-group">
-                    <label>Correo</label>
-                    <input type="email" class="form-control" placeholder="Ruben123@uca.edu.sv">
-                </div>
-                <div class="form-group">
-                    <label>Codigo verificación</label>
-                    <input type="password" class="form-control" placeholder="Password">
-                </div>
-                <div>
-                    <button type="submit" class="btn btn-primary">Ingresar</button>
-                </div>
-                <div class="form-group">
-                        <div class="container">
-                            <div class="row">
-                                <div class="col-sm">
-                                        <p class="text-center">Login</p> 
+            <div class="modal-dialog text-center">
+                <div class="col-sm-8 main">
+                        <div class="contenido">
+                                <div class="col-12 logo">
+                                    <img src="https://images.vexels.com/media/users/3/143097/isolated/preview/5a631e30cd478440c20da8c5578dd77c-discos-con-logo-circular-by-vexels.png" alt="img_logo">
                                 </div>
-                                <div class="col-sm"> 
-                                    <p class="text-center"></p>                                    
+                                <form class="col-12">
+                                    <div class="form-group" id="correo">
+                                            <input type="email" class="form-control" placeholder="Email" name="email"/>
+                                    </div>
+
+                                    <div class="form-group" id="codigo">
+                                        <input type="password" class="form-control" placeholder="Contraseña" name="Code"/>
+                                    </div>
+
+                                    <button type="submit" class="btn btn-primary">  Recuperar Contraseña </button>
+                                </form>
+                                <div class="col-12 links">
+                                    <div>
+                                        <a href="#">Login</a>
+                                    </div>
+                                    <div>
+                                        <a href="#">Registrarse</a>
+                                    </div>                              
                                 </div>
-                                <div class="col-sm">
-                                    <p class="text-center">Registrarse</p>                                        
-                                </div>
-                            </div>
-                        </div>                            
-                </div>                      
-            </div>       
+                        </div>
+                </div>
+            </div>
         </body>
-    </html> 
+</html>
