@@ -1,49 +1,35 @@
-const Register = require("../models/usuario")
+const Usuario= require("../models/usuario")
 
 const insert = (req, res)=>{
-    /**
-     * Para ver el funcionamiento de req.body hacer:
-     * console.log(req.body);
-     */
 
-    if(!req.body.carnet || !req.body.schedule){
+    if(!req.body.dui || !req.body.nombre || !req.body.correo || !req.body.direccion || !req.body.fecha_nac || !req.body.contraseña){
         return res.status(400).json({
             message: "There are missing fields",
         });
     }
     
-    let register = new Register(
+    let usuario = new Usuario(
         req.body
     );
 
-    register.datetime = new Date();
+    usuario.fecha_nac = new Date();
 
-    register.save((err, nRegister)=>{
+    usuario.save((err, nUsuario)=>{
         if(err) return res.status(500).json({
             message: "Something happend trying to insert Register",
         });
 
         res.status(200).json({
             message: "Insert registration was successful",
-            register: nRegister
+            register: nUsuario
         });
     })
 }
 
-/**
- * METHOD = PUT
- * BODY:{
- *      _id: mongoose.Schema.Types.ObjectId
- *      carnet:String,
- *      schedule: String,
- *      isLate: Boolean,
- *      datetime: Date
- * }
- */
 const update = (req, res)=>{
-    let register = req.body
+    let usuario = req.body
     
-    //console.log(register._id);
+    //console.log(register.dui);
     
 
     if(!register._id){
