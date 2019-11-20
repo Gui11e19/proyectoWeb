@@ -21,6 +21,19 @@ const AdminSchema = Mongoose.Schema({
 
 module.exports = Mongoose.model("administrador", AdminSchema);
 
+const ClienteSchema = Mongoose.Schema({
+    username: String,
+    contraseña: String,
+    email: String,
+    fecha_nacimiento: String,
+    dirreccion: String,
+    nacionalidad: String
+});
+
+module.exports = Mongoose.model("cliente", ClienteSchema);
+
+
+
 const EmployeeSchema = Mongoose.Schema({
     nombre: String,
     correo: String,
