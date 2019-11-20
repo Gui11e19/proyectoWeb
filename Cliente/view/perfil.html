@@ -1,45 +1,93 @@
 <!DOCTYPE html>
 <html>
         <head>
-            <title>Recuperar contraseña</title>
+            <title>Perfil</title>
             <meta charset="UTF-8">
             <meta name="viewport" content="width=device-width, initial-scale=1.0">
             <meta http-equiv="X-UA-Compatible" content="ie=edge">
             <link rel="stylesheet" href="../styles/bootstrap.css">
-            <link rel="stylesheet" href="../styles/reset_pass.css">
-            <!-- Los iconos tipo Solid de Fontawesome-->
-            <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/solid.css">
-            <script src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
+            <link rel="stylesheet" href="../styles/perfil.css">
+            <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+            <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+            <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
         </head>
         <body>
-            <div class="modal-dialog text-center">
-                <div class="span8main">
-                        <div class="contenido">
-                                <div class="col-12 logo">
-                                    <img src="https://images.vexels.com/media/users/3/143097/isolated/preview/5a631e30cd478440c20da8c5578dd77c-discos-con-logo-circular-by-vexels.png" alt="img_logo">
+            <div class="container emp-profile">
+                <form method="post">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="profile-img">
+                                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS52y5aInsxSm31CvHOFHWujqUx_wWTS9iM6s7BAm21oEN_RiGoog" alt=""/>
+                                <div class="file btn btn-lg btn-primary">
+                                    Cambiar imagen
+                                    <input type="file" name="file"/>
                                 </div>
-                                <form class="col-12">
-                                    <div class="form-group" id="correo">
-                                            <input type="email" class="form-control" placeholder="Email" name="email"/>
-                                    </div>
-
-                                    <div class="form-group" id="codigo">
-                                        <input type="password" class="form-control" placeholder="Contraseña" name="Code"/>
-                                    </div>
-
-                                    <button type="submit" class="btn btn-primary">  Recuperar Contraseña </button>
-                                </form>
-                                <div class="col-12 links">
-                                    <div>
-                                        <a href="#">Login</a>
-                                    </div>
-                                    <div>
-                                        <div>
-                                        <a href="#">Registrarse</a>
-                                    </div>                              
-                                </div>
+                            </div>
                         </div>
-                </div>
-            </div>
+                        <div class="col-md-6">
+                            <div class="profile-head">
+                                        <h5>
+                                            Kathia Aguilar
+                                        </h5>
+                                        <p class="proile-rating">Compras: <span>8/10</span></p>
+
+                            </div>
+                        </div>
+                        <div class="col-md-2">
+                            <input type="submit" class="profile-edit-btn" name="btnAddMore" value="Editar Perfil"/>
+                        </div>
+                    </div>
+
+                    <div class="col-md-8">
+                            <div class="tab-content profile-tab" id="myTabContent">
+                                <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+                                            <div class="row">
+                                                <div class="col-md-6">
+                                                    <label>Nombre</label>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <p>Kathia</p>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-md-6">
+                                                    <label>Apellido</label>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <p>Aguilar</p>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-md-6">
+                                                    <label>Email</label>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <p>kathiagui@gmail.com</p>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-md-6">
+                                                    <label>Fecha de Nacimiento</label>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <p>22/12/1992</p>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-md-6">
+                                                    <label>Dirección</label>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <p> Final 3era Calle Oriente pasaje 3 poligono G #5 Santa Tecla, La Libertad</p>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-md-6">
+                                                    <label>Nacionalidad</label>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <p>Salvadoreña</p>
+                                                </div>
+                                            </div>
         </body>
 </html>
