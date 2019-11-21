@@ -1,32 +1,36 @@
-body#menu{
+body.menu{
     background-color: #222222;
     margin: 0px;
 }
 
-body#menu ul#sidelist{
-    grid-area: 1 / 2 / span 1 / span 1;
+body.menu aside.sidebar{
+    grid-area: 2 / 1 / span 1 / span 1;
     list-style: none;
     justify-content: center;
-    padding-left: 0;
     padding: 1rem;
     margin: 0;
     font-family: 'Long Cang', cursive;
     top: 0;
-    list-style: none;
     background-color: #333333;
     padding: 0px;
 }
 
-aside#sidebar ul#sidelist li:hover{
-    color: white;
+aside.sidebar ul#sidelist{
+    list-style: none;
+    padding-left: 0;
+    margin: 1rem;
 }
 
-aside#sidebar ul#sidelist li{
+aside.sidebar ul#sidelist li:hover{
+    color: white;
+    background-color: gray;
+}
+
+aside.sidebar ul#sidelist li{
     color: darkgray;
     font-size: 2.5rem;
-    margin: 1.5rem 0px-;
+    margin: 1.5rem 0px;
     text-align: center;
-    
 } 
 
 nav#navbar{
@@ -54,7 +58,7 @@ nav#navbar ul.nav{
     padding: 0px;
 }
 
-div#container{
+div.container{
     display: grid;
     margin: 0.5rem;
     grid-template-columns: 15rem 1fr;
@@ -64,7 +68,7 @@ div#container{
     justify-content: center;
 }
 
-div#menu_heaer{
+div#menu_header{
     display: flex;
     justify-content: space-between;
 }
