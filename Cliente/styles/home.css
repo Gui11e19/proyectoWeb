@@ -1,10 +1,23 @@
-body.menu{
+body{
     background-color: #222222;
     margin: 0px;
 }
 
-body.menu aside.sidebar{
+body aside.sidebar{
     grid-area: 2 / 1 / span 1 / span 1;
+    list-style: none;
+    justify-content: center;
+    padding: 1rem;
+    margin: 0;
+    font-family: 'Long Cang', cursive;
+    top: 0;
+    background-color: #333333;
+    padding: 0px;
+}
+
+
+body aside.sidebar.producto{
+    grid-area: 2 / 1 / span 3 / span 1;
     list-style: none;
     justify-content: center;
     padding: 1rem;
@@ -33,7 +46,7 @@ aside.sidebar ul#sidelist li{
     text-align: center;
 } 
 
-nav#navbar{
+nav.navbar{
     background-color: #333333;
     margin-top: 0px;
     margin-bottom: 0px;
@@ -50,12 +63,29 @@ nav#navbar{
     list-style: none;
     background-color: #333333;
     padding: 0px;
-
+    align-items: flex-start;
 }
 
-nav#navbar ul.nav{
+nav.navbar ul.nav{
     list-style: none;
     padding: 0px;
+    display: flex;
+    justify-content: space-between;
+    margin: 0.25rem;
+}
+
+nav.navbar ul.nav li{
+    border: 1px solid white;
+    border-radius: 0.25rem;
+    padding: 0.25rem;
+    box-sizing: border-box;
+    padding: 0.5rem;
+    margin: 0.05rem 0.10rem;
+}
+
+nav.navbar ul.nav li:hover{
+    color: white;
+    background-color: gray;
 }
 
 div.container{
