@@ -1,7 +1,7 @@
 body{
-    /*background: url(https://image.freepik.com/vector-gratis/fondo-transparente-videojuegos_6997-111.jpg);*/
+    background: url(https://image.freepik.com/vector-gratis/fondo-transparente-videojuegos_6997-111.jpg);
     background-repeat: no-repeat;
-  	background-size: cover;
+    background-size: cover;   
 }
 
 .main{
@@ -43,6 +43,8 @@ body{
     left: 28px;
     font-size: 22px;
     padding-top:4px;
+    color: black;
+    opacity: 80%;
 }
 
 .form-group#nombre::before{
