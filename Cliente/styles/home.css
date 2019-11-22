@@ -32,15 +32,15 @@ ul.menu{
     align-items: center;
 }
 
-ul.menu li{
+ul.menu li a{
     font-size: 1.5rem;
     color:white;
     border-radius: 0.25rem;
     margin: 0.1rem 5.5rem 0rem;
-    
+    text-decoration: none;
 }
 
-ul.menu li:hover{
+ul.menu li a:hover{
     color: orangered;
 }
 
