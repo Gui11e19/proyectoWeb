@@ -120,8 +120,8 @@ h5{
 	justify-content: center;
 	padding: 20px 10px;
 }
-
 /* RESPONSIVE */
+
 
 @media screen and (max-width: 1100px){
 	.products-list .product-item{

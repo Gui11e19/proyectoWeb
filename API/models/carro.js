@@ -8,7 +8,7 @@ module.exports = Mongoose.model("carro", CarroSchema);
 
 const AgregaSchema = Mongoose.Schema({
     precioActual: String,
-    cnatidad: Number,
+    cantidad: Number,
     produto:[
         {type: Schema.Types.ObjectId, ref: 'producto'}
       ],
@@ -21,3 +21,4 @@ const AgregaSchema = Mongoose.Schema({
 });
 
 module.exports = Mongoose.model("agrega", AgregaSchema);
+s
